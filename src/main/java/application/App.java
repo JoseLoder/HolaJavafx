@@ -16,10 +16,11 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(Paths.HOLA_MUNDO));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(Paths.CRUD));
         AnchorPane root = loader.load();
 
         stage.setScene(new Scene(root));
+        stage.setTitle("CRUD Estudiante");
         stage.show();
 
     }
